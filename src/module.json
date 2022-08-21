@@ -1,0 +1,32 @@
+{
+  "name": "ocd-5e",
+  "title": "ocd-5e",
+  "description": "OCD Character Sheets for DnD 5E",
+  "version": "0.0.0",
+  "author": "Mark Holmberg",
+  "authors": [{ "name": "Mark Holmberg" }],
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "scripts": [],
+  "esmodules": ["module/ocd-5e.js"],
+  "styles": ["styles/ocd-5e.css"],
+  "packs": [],
+  "dependencies": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "url": "",
+  "manifest": "",
+  "download": "https://host/path/to/0.0.0.zip",
+  "license": "",
+  "readme": "",
+  "bugs": "",
+  "changelog": "",
+  "system": [],
+  "library": false
+}
