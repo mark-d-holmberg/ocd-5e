@@ -1,1 +1,348 @@
-{}
+{
+  "OCD5E.PlayerName": "Player Name",
+  "OCD5E.Gender": "Gender",
+  "OCD5E.Age": "Age",
+  "OCD5E.Weight": "Weight",
+  "OCD5E.Height": "Height",
+  "OCD5E.Eyes": "Eyes",
+  "OCD5E.Skin": "Skin",
+  "OCD5E.Hair": "Hair",
+  "OCD5E.Subclass": "Subclass",
+  "OCD5E.EditActorImage": "left click: edit image",
+  "OCD5E.ShowActorImage": "right click: show character art",
+  "OCD5E.ShowPortraitArt": "show portrait",
+  "OCD5E.ShowTokenArt": "show token",
+
+  "OCD5E.Exhaustion0": "No negative effects",
+  "OCD5E.Exhaustion1": "Disadvantage on Ability Checks",
+  "OCD5E.Exhaustion2": "Speed halved",
+  "OCD5E.Exhaustion3": "Disadvantage on Attack rolls and Saving Throws",
+  "OCD5E.Exhaustion4": "Hit point maximum halved",
+  "OCD5E.Exhaustion5": "Speed reduced to 0",
+  "OCD5E.Exhaustion6": "Death",
+
+  "OCD5E.AbbrInitiative": "Ini",
+
+  "OCD5E.RestHint": "Take A Rest",
+  "OCD5E.RestS": "Short Rest",
+  "OCD5E.RestL": "Long Rest",
+  "OCD5E.HitDiceRollAverage": "Right Click: Average",
+
+  "OCD5E.Journal": "Journal",
+
+  "OCD5E.RestoreOnRest": "Restore on rest",
+
+  "OCD5E.JournalPoi": "Persons of Interest",
+  "OCD5E.JournalLoi": "Locations of Interest",
+  "OCD5E.JournalQuests": "Quests",
+  "OCD5E.JournalMisc": "Miscellaneous",
+  "OCD5E.JournalEntries": "Journal Entries",
+  "OCD5E.TogglePersonalityInfo": "Toggle Personality Info",
+
+  "OCD5E.EnableEdit": "Enable Edit",
+  "OCD5E.DisableEdit": "Disable Edit",
+  "OCD5E.EditHint": "Toggles visibility of add/delete buttons and empty sections",
+
+  "OCD5E.Equip": "Equip Item",
+  "OCD5E.Unequip": "Unequip Item",
+  "OCD5E.Attune": "Attune to Item",
+  "OCD5E.Deattune": "Break Attunement",
+  "OCD5E.Prepare": "Prepare Spell",
+  "OCD5E.Unprepare": "Remove Preparation",
+
+  "OCD5E.EmptySection": "This section is empty. Unlock the sheet to edit.",
+  "OCD5E.GmOnlyEdit": "Only your GM can edit this section.",
+
+  "OCD5E.AttunementWarning": "Attunement warning: You can't attune to more than {number} items!",
+  "OCD5E.AttunementItems": "Attuned Items",
+  "OCD5E.AttunementMax": "Attunement maximum",
+
+  "OCD5E.GridLayout": "Grid Layout",
+  "OCD5E.ListLayout": "List Layout",
+
+  "OCD5E.Encumbrance": "Encumbrance",
+
+  "OCD5E.EditSpell": "Edit Spell",
+  "OCD5E.DeleteSpell": "Delete Spell",
+  "OCD5E.AddFav": "Add Favorite",
+  "OCD5E.isFav": "Favorite",
+  "OCD5E.RemoveFav": "Remove Favorite",
+
+  "OCD5E.ToggleInfo": "Toggle Info",
+
+  "OCD5E.Show": "show/edit",
+  "OCD5E.Hide": "hide",
+  "OCD5E.Edit": "edit",
+  "OCD5E.TraitsEmpty": "empty traits",
+
+  "OCD5E.Abilities": "Abilities",
+
+  "OCD5E.Environment": "Environment",
+
+  "OCD5E.SearchItem": "search item",
+  "OCD5E.SearchSpell": "search spell",
+  "OCD5E.SearchFeat": "search feature",
+  "OCD5E.SearchClear": "clear search",
+  "OCD5E.SearchHint": "Just start to type what you are searching for.",
+
+  "OCD5E.ItemCardsKeyHint": "hold Key to interact with card.",
+  "OCD5E.ItemCardsMouseHint": "middle mouse to view/edit item.",
+
+  "OCD5E.AbbrMod": "Mod",
+  "OCD5E.AbbrSavingThrow": "Save",
+  "OCD5E.SpellAttackMod": "Attack Mod",
+  "OCD5E.PreparedSpells": "Prepared spells",
+  "OCD5E.PreparedSpellsMax": "Maximum for prepared spells",
+  "OCD5E.Components": "Comps",
+  "OCD5E.SpellSchool": "School",
+
+  "OCD5E.TokenLinked": "Token linked to actor",
+  "OCD5E.TokenUnlinked": "Token not linked to actor",
+
+  "OCD5E.ItemDetailsHeadline": "Mechanics/Flavor Text",
+
+  "OCD5E.Settings.GlobalLabel": "Global",
+  "OCD5E.Settings.DebugLabel": "Debug",
+  "OCD5E.Settings.UserLabel": "User",
+  "OCD5E.Settings.PcLabel": "PCs",
+  "OCD5E.Settings.NpcLabel": "NPCs",
+  "OCD5E.Settings.VehicleLabel": "Vehicles",
+
+  "OCD5E.Settings.SheetMenu": {
+    "label": "Sheet Settings",
+    "title": "OCD-5E Sheet Settings"
+  },
+  "OCD5E.Settings.TabPlayers": {
+    "tabLabel": "Players",
+    "header": "Player Character Sheets"
+  },
+  "OCD5E.Settings.TabNPCsVehicles": {
+    "tabLabel": "NPCs/Vehicles",
+    "header": "NPC/Vehicle Sheets",
+    "labelNPCs": "NPCs",
+    "labelVehicles": "Vehicles"
+  },
+  "OCD5E.Settings.TabGM": {
+    "tabLabel": "GM Options",
+    "header": "GM Sheet Options"
+  },
+  "OCD5E.Settings.TabModules": {
+    "tabLabel": "Modules",
+    "header": "Module Options",
+    "labelActionsFavorites": "Actor Actions/Favorites",
+    "labelMidiQoL": "Midi Qol"
+  },
+  "OCD5E.Settings.TabInfo": {
+    "tabLabel": "Info",
+    "header": "Info"
+  },
+  "OCD5E.Settings.ItemCardsForAllItems": {
+    "name": "Show item info cards in all layouts.",
+    "hint": "Disable if you only want the slide out item info cards in grid layout."
+  },
+  "OCD5E.Settings.ItemCardsForNpcs": {
+    "name": "Show item info cards for NPCs/vehicles.",
+    "hint": "Disable if you don't want the slide out item info cards for NPCs/vehicles."
+  },
+  "OCD5E.Settings.ItemCardsAreFloating": {
+    "name": "Item info cards float next to cursor.",
+    "hint": "Enable to detach item info cards from sheet and float them next to the cursor. Best to use with delay. Also useful when sheet is popped out."
+  },
+  "OCD5E.Settings.ItemCardsDelay": {
+    "name": "Delay showing info cards.",
+    "hint": "The Item Card will show when you hover an item for the value in milliseconds (0 = no delay, 300 is default)."
+  },
+  "OCD5E.Settings.ItemCardsFixKey": {
+    "name": "Key to hold for Item Card interaction.",
+    "hint": "Enter a key (e.g.: x) to use for item card interaction. Can be any key except function keys (ctrl, alt, etc.)"
+  },
+
+  "OCD5E.Settings.SheetTheme": {
+    "name": "OCD-5E color theme.",
+    "hint": "Use either the default light or alternate dark color theme of OCD-5E.",
+    "default": "Default (light)",
+    "dark": "Alternate (dark)"
+  },
+
+  "OCD5E.Settings.ClassicControls": {
+    "name": "Use classic item controls in list view.",
+    "hint": "Always shows item controls and disable right click menu. Only applies for PC item/spell inventory in list layout."
+  },
+  "OCD5E.Settings.RollButtonsToCard": {
+    "name": "Show midiQol Item Buttons in item's info card",
+    "hint": "Per default roll buttons appear in the item's description. Enable to move them to the item's info card. Works in all layout modes."
+  },
+  "OCD5E.Settings.TraitLabels": {
+    "name": "Show Trait Labels.",
+    "hint": "Disable to only show icons for PC/NPC traits."
+  },
+
+  "OCD5E.Settings.PlayerName": {
+    "name": "Show player name.",
+    "hint": "Enable to show a field for the player name below the character's name."
+  },
+  "OCD5E.Settings.JournalTab": {
+    "name": "Hide character journal.",
+    "hint": "Enable to hide the journal tab."
+  },
+  "OCD5E.Settings.ClassList": {
+    "name": "Hide character class list.",
+    "hint": "Enable to hide the class list below the character's name."
+  },
+  "OCD5E.Settings.InspirationAnimation": {
+    "name": "Inanimate inspiration tracker.",
+    "hint": "Enable to turn off inspiration tracker glow animation."
+  },
+  "OCD5E.Settings.HideIfZero": {
+    "name": "Hide exhaustion and inspiration tracker on 0.",
+    "hint": "Enable to hide exhaustion and inspiration if 0. Will show on hover."
+  },
+  "OCD5E.Settings.InspirationOnHover": {
+    "name": "Show inspiration indicator only on hover.",
+    "hint": "Enable to only show the inspiration indicator when you hover over the portrait."
+  },
+  "OCD5E.Settings.ExhaustionOnHover": {
+    "name": "Show exhaustion tracker only on hover.",
+    "hint": "Enable to only show the exhaustion tracker when you hover over the portrait."
+  },
+  "OCD5E.Settings.HpBar": {
+    "name": "Disable health bar.",
+    "hint": "Enable to hide the colored bar indicating the remaining HP (Health Numbers will still be visible)."
+  },
+  "OCD5E.Settings.HpOverlay": {
+    "name": "Hide hit point overlay.",
+    "hint": "Enable to hide the HP overlay for this actor type."
+  },
+  "OCD5E.Settings.TraitsTogglePc": {
+    "name": "Toggle empty character traits.",
+    "hint": "By default empty traits are always visible. Enable to add a toggle button."
+  },
+
+  "OCD5E.Settings.TraitsAlwaysShowSpecialButton": {
+    "name": "Always show Special Traits button",
+    "hint": "Show the button regardless of collapsed traits."
+  },
+
+  "OCD5E.Settings.TraitsMovedBelowResource": {
+    "name": "Move traits below resources.",
+    "hint": "Enable to move traits from the left side below resources."
+  },
+  "OCD5E.Settings.AmmoEquippedOnly": {
+    "name": "Only show equipped ammunition.",
+    "hint": "Enable to only show currently equipped ammunition in Weapon ammo selector."
+  },
+
+  "OCD5E.Settings.TraitsAlwaysShown": {
+    "name": "Always show traits.",
+    "hint": "By default empty traits are hidden by a toggle button. Enable to never hide."
+  },
+  "OCD5E.Settings.SkillsAlwaysShown": {
+    "name": "Always show skills.",
+    "hint": "By default unproficient skills are hidden by a toggle button. Enable to never hide."
+  },
+
+  "OCD5E.Settings.ActiveEffectsMarker": {
+    "name": "Show Active Effects Marker on items.",
+    "hint": "Enable if you want to see if items have active effects on them (only for list view)."
+  },
+  "OCD5E.Settings.RightClick": {
+    "name": "Disable right click context menu.",
+    "hint": "In case of module conflicts or preference you can disable the right click context menu. Items will show a menu icon instead."
+  },
+  "OCD5E.Settings.ExpandedSheet": {
+    "name": "Expanded Limited view for character sheets.",
+    "hint": "Displays the entire character sheet (minus the journal) to players with limited permission."
+  },
+  "OCD5E.Settings.PortraitStyle": {
+    "name": "Round portrait style.",
+    "hint": "Choose to enable round portraits/icons for actors.",
+    "all": "All actors",
+    "pc": "PCs",
+    "npc": "NPCs/Vehicles",
+    "none": "none",
+    "default": "none"
+  },
+  "OCD5E.Settings.HpOverlayBorder": {
+    "name": "Offset hit point overlay.",
+    "hint": "Enter offset value to compensate for portrait frames and prevent tinting."
+  },
+  "OCD5E.Settings.EditTotalLock": {
+    "name": "Lock down sensitive fields.",
+    "hint": "Enable to prevent accidentally changing sensible, mostly static values."
+  },
+  "OCD5E.Settings.EditGmAlways": {
+    "name": "GM can always edit PC sheets.",
+    "hint": "Enable to allow GMs to edit PC sheets without toggling the sheet lock."
+  },
+  "OCD5E.Settings.EditEffectsGmOnly": {
+    "name": "Only GM can edit active effects.",
+    "hint": "Enable to deny players to edit active effects on their sheets. They will still see applied effects."
+  },
+  "OCD5E.Settings.QuantityAlwaysShown": {
+    "name": "Always show item quantity.",
+    "hint": "Enable to never hide item quantity."
+  },
+  "OCD5E.Settings.InspirationDisabled": {
+    "name": "Disable inspiration tracker.",
+    "hint": "If your campaign doesn't use inspiration you can disable the tracker completely."
+  },
+  "OCD5E.Settings.ExhaustionEffects": {
+    "name": "Auto Exhaustion effects.",
+    "hint": "Choose how to apply exhaustion effects corresponding to tiers (requires midiQol for disadvantage rolls)",
+    "default": "No automatic exhaustion effects",
+    "ocd5e": "OCD-5E - Apply integrated effects (uses Active Effects)",
+    "custom": "Custom - Use your own effects (requires CUB)"
+  },
+  "OCD5E.Settings.CustomExhaustionIcon": {
+    "name": "Custom exhaustion effect icon.",
+    "hint": "Set your custom exhaustion effect icon by providing an image url. Only available when Exhaustion Effect is set to \"ocd5e\" (e. g.: modules/ocd-5e/images/exhaustion.svg)."
+  },
+  "OCD5E.Settings.CustomExhaustionEffect": {
+    "name": "Custom CUB exhaustion effect name.",
+    "hint": "Set the name for your custom Exhaustion Effect - must be the same as defined in CUB but WITHOUT tier number. (e. g. \"Exhaustion\")",
+    "tiers": "Number of custom CUB exhaustion tiers. Default = 5",
+    "warning": "Can't find actor token to apply exhaustion effect to!"
+  },
+  "OCD5E.Settings.ExhaustionDisabled": {
+    "name": "Disable exhaustion tracker.",
+    "hint": "If your campaign doesn't use exhaustion you can disable the tracker completely."
+  },
+  "OCD5E.Settings.RestingForNpcs": {
+    "name": "Resting for NPCs.",
+    "hint": "Enable to shows the rest icon/buttons on NPC sheets."
+  },
+  "OCD5E.Settings.RestingForNpcsChat": {
+    "name": "Hide chat card for NPC rest.",
+    "hint": "Enable to hide the Chat Card for NPC rest (applies to GM and Players)."
+  },
+  "OCD5E.Settings.LinkMarker": {
+    "name": "Mark linked/unlinked NPCs.",
+    "hint": "Adds a colored border and icon to linked/unliked NPC sheets.",
+    "default": "No link marker (default)",
+    "unlinked": "Highlight unlinked tokens",
+    "linked": "Highlight linked tokens",
+    "both": "Highlight linked and unlinked tokens"
+  },
+  "OCD5E.Settings.DefaultActionsTab": {
+    "name": "Default Tab when opening a sheet for the first time.",
+    "hint": "Chose between 'Actions' and 'Attributes'.",
+    "default": "Actions",
+    "attributes": "Attributes"
+  },
+  "OCD5E.Settings.HiddenDeathSaves": {
+    "name": "Hide Death Saves from Players.",
+    "hint": "Enable to make Death Saves and Death Save Results only visible to the GM"
+  },
+  "OCD5E.Settings.npsSheetWidth": {
+    "name": "Default NPC sheet width.",
+    "hint": "The width of the NPC sheet in pixels, requires a refresh to take effect (default 740)."
+  },
+  "OCD5E.Settings.playerSheetWidth": {
+    "name": "Default player sheet width.",
+    "hint": "The width of the player sheet in pixels, requires a refresh to take effect (default 740)."
+  },
+  "OCD5E.Settings.vehicleSheetWidth": {
+    "name": "Default vehicle sheet width.",
+    "hint": "The width of the vehicle sheet in pixels, requires a refresh to take effect (default 740)."
+  }
+}

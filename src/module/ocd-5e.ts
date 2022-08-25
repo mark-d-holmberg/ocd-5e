@@ -13,15 +13,26 @@
 // Import TypeScript modules
 import { registerSettings } from './settings';
 import { preloadTemplates } from './preloadTemplates';
+import { Ocd5eUserSettings } from './userSettings';
+import { Ocd5eCharacterSheet } from './actor/sheets/ocd5eCharacterSheet';
+import * as CharacterSheetHooks from './app/characterSheetHooks';
+import { addFavorites } from './app/favorites';
 
 // Initialize module
 Hooks.once('init', async () => {
   console.log('ocd-5e | Initializing ocd-5e');
 
   // Assign custom classes and constants here
+  Ocd5eUserSettings.init();
 
   // Register custom module settings
   registerSettings();
+
+  // Register Ocd5e Sheet and make default character sheet
+  Actors.registerSheet('dnd5e', Ocd5eCharacterSheet, {
+    types: ['character'],
+    makeDefault: true,
+  });
 
   // Preload Handlebars templates
   await preloadTemplates();
@@ -41,3 +52,29 @@ Hooks.once('ready', async () => {
 });
 
 // Add any additional hooks if necessary
+
+Hooks.on('renderOcd5eCharacterSheet', (app, html, data) => {
+  console.log('odc-5e | Hooks.renderOcd5eCharacterSheet fired');
+  const position = 0;
+
+  CharacterSheetHooks.setSheetClasses(app, html, data);
+  CharacterSheetHooks.editProtection(app, html, data);
+  CharacterSheetHooks.addClassList(app, html, data);
+  CharacterSheetHooks.toggleTraitsList(app, html, data);
+  CharacterSheetHooks.checkDeathSaveStatus(app, html, data);
+  CharacterSheetHooks.abbreviateCurrency(app, html, data);
+  CharacterSheetHooks.spellAttackMod(app, html, data);
+  addFavorites(app, html, data, position);
+  CharacterSheetHooks.countAttunedItems(app, html, data);
+  CharacterSheetHooks.countInventoryItems(app, html, data);
+  CharacterSheetHooks.markActiveEffects(app, html, data);
+});
+
+Hooks.on('renderOcd5eUserSettings', () => {
+  console.log('ocd-5e | renderOcd5eUserSettings');
+  if (!game.user.isGM) {
+    document.querySelectorAll('.ocd5e.settings .gm-only').forEach(function (el) {
+      el.remove();
+    });
+  }
+});
