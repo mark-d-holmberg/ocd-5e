@@ -52,21 +52,23 @@ export const ocd5eContextMenu = function (html) {
       item = item.parentNode;
     }
 
-    mouseX = event.clientX;
-    mouseY = event.clientY;
-    itemTop = $(item).offset().top;
-    itemLeft = $(item).offset().left;
-    itemHeight = $(item).height();
-    itemWidth = $(item).width();
-    contextTop = mouseY - itemTop + 1;
-    contextLeft = mouseX - itemLeft + 1;
-    contextWidth = $(item).find('.context-menu').width();
-    contextHeight = $(item).find('.context-menu').height();
-    contextRightBound = mouseX + contextWidth;
-    contextBottomBound = mouseY + contextHeight;
-    itemsList = $(item).closest('.items-list');
-    itemsListRightBound = itemsList.offset().left + itemsList.width() - 17;
-    itemsListBottomBound = itemsList.offset().top + itemsList.height();
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    const itemTop = $(item).offset().top;
+    const itemLeft = $(item).offset().left;
+
+    // itemHeight = $(item).height();
+    // itemWidth = $(item).width();
+
+    const contextTop = mouseY - itemTop + 1;
+    const contextLeft = mouseX - itemLeft + 1;
+    const contextWidth = $(item).find('.context-menu').width();
+    const contextHeight = $(item).find('.context-menu').height();
+    const contextRightBound = mouseX + contextWidth;
+    const contextBottomBound = mouseY + contextHeight;
+    const itemsList = $(item).closest('.items-list');
+    const itemsListRightBound = itemsList.offset().left + itemsList.width() - 17;
+    const itemsListBottomBound = itemsList.offset().top + itemsList.height();
 
     // check right side bounds
     if (contextRightBound > itemsListRightBound) {

@@ -217,7 +217,8 @@ export const addFavorites = async function (app, html, data, position) {
           item.toggleTitle = game.i18n.localize(isActive ? 'DND5E.SpellPrepared' : 'DND5E.SpellUnprepared');
         }
       } else {
-        item.toggleTitle = game.i18n.localize(isActive ? 'DND5E.Equipped' : 'DND5E.Unequipped');
+        // item.toggleTitle = game.i18n.localize(isActive ? 'DND5E.Equipped' : 'DND5E.Unequipped');
+        item.toggleTitle = game.i18n.localize(isActive ? 'OCD5E.StowItem' : 'OCD5E.EquipItem');
       }
 
       item.spellComps = '';

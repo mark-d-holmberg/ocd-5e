@@ -43,6 +43,9 @@
   "OCD5E.DisableEdit": "Disable Edit",
   "OCD5E.EditHint": "Toggles visibility of add/delete buttons and empty sections",
 
+  "OCD5E.EquipItem": "Equip Item",
+  "OCD5E.StowItem": "Stow Item",
+
   "OCD5E.Equip": "Equip Item",
   "OCD5E.Unequip": "Unequip Item",
   "OCD5E.Attune": "Attune to Item",
@@ -70,9 +73,9 @@
 
   "OCD5E.ToggleInfo": "Toggle Info",
 
-  "OCD5E.Show": "show/edit",
-  "OCD5E.Hide": "hide",
-  "OCD5E.Edit": "edit",
+  "OCD5E.Show": "Show/Edit",
+  "OCD5E.Hide": "Hide",
+  "OCD5E.Edit": "Edit",
   "OCD5E.TraitsEmpty": "empty traits",
 
   "OCD5E.Abilities": "Abilities",
