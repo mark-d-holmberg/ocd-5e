@@ -268,36 +268,6 @@ export const addFavorites = async function (app, html, data, position) {
     }
   }
 
-  // sorting favSpells alphabetically
-  /*
-      const favSpellsArray = Object.keys(favSpells);
-      for (let key of favSpellsArray){
-        favSpells[key].spells.sort(function(a, b){
-         var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase();
-         if (nameA < nameB) //sort string ascending
-          return -1;
-         if (nameA > nameB)
-          return 1;
-         return 0; //default return value (no sorting)
-        });
-      }
-      */
-
-  // sorting favSpellsPrepMode alphabetically
-  /*
-      const favSpellsPrepModeArray = Object.keys(favSpellsPrepMode);
-      for (let key of favSpellsPrepModeArray){
-        favSpellsPrepMode[key].spells.sort(function(a, b){
-         var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase();
-         if (nameA < nameB) //sort string ascending
-          return -1;
-         if (nameA > nameB)
-          return 1;
-         return 0; //default return value (no sorting)
-        });
-      }
-      */
-
   const attributesTab = html.find('.item[data-tab="attributes"]');
   const favContainer = html.find('.favorites-wrap');
   const favContent = html.find('.favorites-target');
@@ -318,6 +288,8 @@ export const addFavorites = async function (app, html, data, position) {
 
     // showing item summary
     favHtml.find('.item-name h4').click((event) => app._onItemSummary(event));
+
+    console.log('ocd-5e | favorites:: template loaded');
 
     ocd5eContextMenu(favHtml);
 

@@ -3,12 +3,15 @@ export const ocd5eItemCard = function (html, actor) {
 
   const itemCardsForAllItems = game.settings.get('ocd-5e', 'itemCardsForAllItems');
 
+  // TODO: this needs to bind the events after the "favorites list" is loaded in the DOM
   const containerTrigger = itemCardsForAllItems
     ? html.find('.inventory-list:not(.character-actions-dnd5e)')
     : html.find('.grid-layout .inventory-list');
   const cardTrigger = itemCardsForAllItems
     ? html.find('.inventory-list:not(.character-actions-dnd5e) .item-list .item')
     : html.find('.grid-layout .item-list .item');
+
+  console.log('ocd-5e | cardTrigger is bound to: ', cardTrigger);
 
   const infoContainer = html.find('#item-info-container'),
     infoContainerContent = html.find('#item-info-container-content');
@@ -32,7 +35,10 @@ export const ocd5eItemCard = function (html, actor) {
       getBounds();
     }, 500);
 
+    console.log('ocd-5e | containerTriger is: ', containerTrigger);
+
     containerTrigger.each(function (i, el) {
+      console.log('ocd-5e | container trigger addEventListener');
       el.addEventListener('mousemove', setCardPosition);
     });
   }
@@ -111,6 +117,11 @@ export const ocd5eItemCard = function (html, actor) {
   };
 
   cardTrigger.mouseenter(function (event) {
+    console.log(
+      'ocd-5e | itemCard::mouseenter regular event, cardTrigger is only loaded with: ',
+      cardTrigger,
+      ' regular event setup balls',
+    );
     if (!itemCardIsFixed) {
       if (!itemCardDelay) infoContainer.addClass('open');
     }
@@ -123,6 +134,7 @@ export const ocd5eItemCard = function (html, actor) {
   });
 
   cardTrigger.mouseenter(async (event) => {
+    console.log('ocd-5e | itemCard::mouseenter async event');
     mouseOverItem = true;
     if (!itemCardIsFixed) {
       if (itemCardDelay) itemCardDelayCard(event);

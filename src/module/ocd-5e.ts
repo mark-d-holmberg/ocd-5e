@@ -19,6 +19,8 @@ import { Ocd5eItemSheet } from './ocd5eItemSheet';
 import * as CharacterSheetHooks from './app/characterSheetHooks';
 import { addFavorites } from './app/favorites';
 
+// $(temp1.currentTarget).next("ul.item-list").show();
+
 // Initialize module
 Hooks.once('init', async () => {
   console.log('ocd-5e | Initializing ocd-5e');
