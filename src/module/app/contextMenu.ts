@@ -60,8 +60,8 @@ export const ocd5eContextMenu = function (html) {
     // itemHeight = $(item).height();
     // itemWidth = $(item).width();
 
-    const contextTop = mouseY - itemTop + 1;
-    const contextLeft = mouseX - itemLeft + 1;
+    let contextTop = mouseY - itemTop + 1;
+    let contextLeft = mouseX - itemLeft + 1;
     const contextWidth = $(item).find('.context-menu').width();
     const contextHeight = $(item).find('.context-menu').height();
     const contextRightBound = mouseX + contextWidth;

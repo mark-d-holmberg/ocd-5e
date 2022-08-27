@@ -15,6 +15,7 @@ import { registerSettings } from './settings';
 import { preloadTemplates } from './preloadTemplates';
 import { Ocd5eUserSettings } from './userSettings';
 import { Ocd5eCharacterSheet } from './actor/sheets/ocd5eCharacterSheet';
+import { Ocd5eItemSheet } from './ocd5eItemSheet';
 import * as CharacterSheetHooks from './app/characterSheetHooks';
 import { addFavorites } from './app/favorites';
 
@@ -33,6 +34,9 @@ Hooks.once('init', async () => {
     types: ['character'],
     makeDefault: true,
   });
+
+  // Register Ocd5e Item Sheet and make default
+  Items.registerSheet('dnd5e', Ocd5eItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates
   await preloadTemplates();
@@ -78,3 +82,13 @@ Hooks.on('renderOcd5eUserSettings', () => {
     });
   }
 });
+
+Hooks.on('renderOcd5eItemSheet', (app, html, data) => {
+  addEditorHeadline(app, html, data);
+});
+
+async function addEditorHeadline(app, html, data) {
+  html
+    .find('.tab[data-tab=description] .editor')
+    .prepend(`<h2 class="details-headline">${game.i18n.localize('OCD5E.ItemDetailsHeadline')}</h2>`);
+}

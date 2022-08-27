@@ -1,15 +1,3 @@
-/*
- * This file and its functions are
- * adapted for the Tidy5eSheet from
- * FavTab Module version 0.5.4
- * by Felix M�ller aka syl3r96
- * (Felix#6196 on Discord).
- *
- * It is licensed under a
- * Creative Commons Attribution 4.0 International License
- * and can be found at https://github.com/syl3r86/favtab.
- */
-
 import { ocd5eContextMenu } from './contextMenu';
 
 export const addFavorites = async function (app, html, data, position) {
