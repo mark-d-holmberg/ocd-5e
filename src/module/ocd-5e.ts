@@ -18,12 +18,16 @@ import { Ocd5eCharacterSheet } from './actor/sheets/ocd5eCharacterSheet';
 import { Ocd5eItemSheet } from './ocd5eItemSheet';
 import * as CharacterSheetHooks from './app/characterSheetHooks';
 import { addFavorites } from './app/favorites';
+import { OcdSettingsConfig } from './ocdSettingsConfig';
 
 // $(temp1.currentTarget).next("ul.item-list").show();
 
 // Initialize module
 Hooks.once('init', async () => {
   console.log('ocd-5e | Initializing ocd-5e');
+
+  // Setup our custom sheet for the Settings Menu
+  game.settings._sheet = new OcdSettingsConfig();
 
   // Assign custom classes and constants here
   Ocd5eUserSettings.init();
@@ -87,6 +91,10 @@ Hooks.on('renderOcd5eUserSettings', () => {
 
 Hooks.on('renderOcd5eItemSheet', (app, html, data) => {
   addEditorHeadline(app, html, data);
+});
+
+Hooks.on('renderOcdSettingsConfig', (app, html, data) => {
+  console.log('ocd-5e | renderOcd5eUserSettings fired');
 });
 
 async function addEditorHeadline(app, html, data) {

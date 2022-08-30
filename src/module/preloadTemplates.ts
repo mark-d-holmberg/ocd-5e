@@ -18,6 +18,8 @@ export async function preloadTemplates(): Promise<Handlebars.TemplateDelegate[]>
     `modules/ocd-5e/templates/actors/parts/ocd5e-spellbook-header.html`,
     `modules/ocd-5e/templates/actors/parts/ocd5e-spellbook.html`,
     `modules/ocd-5e/templates/actors/parts/ocd5e-traits.html`,
+
+    `modules/ocd-5e/templates/sidebar/apps/settings-config.html`,
   ];
 
   return loadTemplates(templatePaths);
