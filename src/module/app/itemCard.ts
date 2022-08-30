@@ -1,6 +1,5 @@
-export const ocd5eItemCard = function (html, actor) {
+export async function ocd5eItemCard(html, actor): Promise {
   // show/hide grid layout item info card on mouse enter/leave
-
   const itemCardsForAllItems = game.settings.get('ocd-5e', 'itemCardsForAllItems');
 
   // TODO: this needs to bind the events after the "favorites list" is loaded in the DOM
@@ -214,4 +213,4 @@ export const ocd5eItemCard = function (html, actor) {
     const action = $(this).attr('data-action');
     $(`.ocd-5e .item[data-item-id='${itemId}'] .item-buttons .button[data-action='${action}']`).trigger(e);
   });
-};
+}

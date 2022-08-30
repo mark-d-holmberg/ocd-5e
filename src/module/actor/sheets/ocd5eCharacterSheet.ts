@@ -5,6 +5,7 @@ import { ocd5eSearchFilter } from '../../app/searchFilter';
 import { ocd5eShowActorArt } from '../../app/showActorArt';
 import { ocd5eItemCard } from '../../app/itemCard';
 import { ocd5eAmmoSwitch } from '../../app/ammoSwitch';
+import { ocd5eItemCard } from '../../app/itemCard';
 
 export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
   get template() {
@@ -92,9 +93,8 @@ export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
     return html;
   }
 
-  activateListeners(html) {
+  async activateListeners(html) {
     console.log('ocd-5e | Activate Listeners');
-    super.activateListeners(html);
 
     const actor = this.actor;
     let position = 0;
@@ -103,7 +103,7 @@ export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
     ocd5eContextMenu(html);
     ocd5eSearchFilter(html, actor);
     ocd5eShowActorArt(html, actor);
-    ocd5eItemCard(html, actor);
+    await ocd5eItemCard(html, actor);
     ocd5eAmmoSwitch(html, actor);
 
     // store Scroll Pos
@@ -209,5 +209,7 @@ export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
         }
       }
     });
+    // Do our stuff first, then this!
+    super.activateListeners(html);
   }
 }

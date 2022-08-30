@@ -1,6 +1,6 @@
 import { ocd5eContextMenu } from './contextMenu';
 
-export const addFavorites = async function (app, html, data, position) {
+export async function addFavorites(app, html, data, position): Promise {
   // creating the favourite tab and loading favourited items
   const favMarker = $('<i class="fas fa-bookmark"></i>');
 
@@ -446,4 +446,4 @@ export const addFavorites = async function (app, html, data, position) {
       favContent.find('.items-list').addClass('alt-context');
     }
   }
-};
+}

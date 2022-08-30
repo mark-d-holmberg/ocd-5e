@@ -1,5 +1,4 @@
-export const ocd5eContextMenu = function (html) {
-  console.log('ocd-5e | ocd5eContextMenu listening');
+export async function ocd5eContextMenu(html): Promise {
   // open context menu
 
   html.find('.item-list .item.context-enabled').mousedown(async (event) => {
@@ -103,4 +102,4 @@ export const ocd5eContextMenu = function (html) {
         break;
     }
   });
-};
+}
