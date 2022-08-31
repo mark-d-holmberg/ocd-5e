@@ -91,7 +91,7 @@
         <div class="tab" data-tab="modules" data-group="sections">
             <div class="settings-list">
             {{#each data.modules as |m|}}
-                <h2 class="module-header module-header-collapse">{{localize m.title}}</h2>
+                <h2 class="module-header module-header-collapse">{{localize m.title}} <i class='fas fa-bars hamburger-hide'></i></h2>
                 <span class="module-child-section">
                   {{#each m.menus}}
                   {{> menuPartial}}

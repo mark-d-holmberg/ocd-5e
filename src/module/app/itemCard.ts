@@ -2,15 +2,12 @@ export async function ocd5eItemCard(html, actor): Promise {
   // show/hide grid layout item info card on mouse enter/leave
   const itemCardsForAllItems = game.settings.get('ocd-5e', 'itemCardsForAllItems');
 
-  // TODO: this needs to bind the events after the "favorites list" is loaded in the DOM
   const containerTrigger = itemCardsForAllItems
     ? html.find('.inventory-list:not(.character-actions-dnd5e)')
     : html.find('.grid-layout .inventory-list');
   const cardTrigger = itemCardsForAllItems
     ? html.find('.inventory-list:not(.character-actions-dnd5e) .item-list .item')
     : html.find('.grid-layout .item-list .item');
-
-  console.log('ocd-5e | cardTrigger is bound to: ', cardTrigger);
 
   const infoContainer = html.find('#item-info-container'),
     infoContainerContent = html.find('#item-info-container-content');
@@ -116,11 +113,6 @@ export async function ocd5eItemCard(html, actor): Promise {
   };
 
   cardTrigger.mouseenter(function (event) {
-    console.log(
-      'ocd-5e | itemCard::mouseenter regular event, cardTrigger is only loaded with: ',
-      cardTrigger,
-      ' regular event setup balls',
-    );
     if (!itemCardIsFixed) {
       if (!itemCardDelay) infoContainer.addClass('open');
     }

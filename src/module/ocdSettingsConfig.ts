@@ -16,8 +16,8 @@ export class OcdSettingsConfig extends SettingsConfig {
     super.activateListeners(html);
 
     // Collapse/Expand the child element and update the app position
-    html.find('h2.module-header.module-header-collapse').click((event) => {
-      $(event.target).next('.module-child-section').toggle();
+    html.find('h2.module-header.module-header-collapse i.hamburger-hide').click((event) => {
+      $(event.target).parent('h2').next('.module-child-section').toggle();
       game.settings.sheet.setPosition();
     });
   }
