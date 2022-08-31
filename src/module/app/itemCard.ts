@@ -31,10 +31,7 @@ export async function ocd5eItemCard(html, actor): Promise {
       getBounds();
     }, 500);
 
-    console.log('ocd-5e | containerTriger is: ', containerTrigger);
-
     containerTrigger.each(function (i, el) {
-      console.log('ocd-5e | container trigger addEventListener');
       el.addEventListener('mousemove', setCardPosition);
     });
   }
@@ -125,7 +122,6 @@ export async function ocd5eItemCard(html, actor): Promise {
   });
 
   cardTrigger.mouseenter(async (event) => {
-    console.log('ocd-5e | itemCard::mouseenter async event');
     mouseOverItem = true;
     if (!itemCardIsFixed) {
       if (itemCardDelay) itemCardDelayCard(event);

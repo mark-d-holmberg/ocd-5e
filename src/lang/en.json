@@ -104,6 +104,8 @@
 
   "OCD5E.ItemDetailsHeadline": "Mechanics/Flavor Text",
 
+  "OCD5E.RollSkillCheck": "Roll Skill Check",
+
   "OCD5E.Settings.GlobalLabel": "Global",
   "OCD5E.Settings.DebugLabel": "Debug",
   "OCD5E.Settings.UserLabel": "User",
