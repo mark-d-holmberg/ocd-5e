@@ -28,7 +28,8 @@ export async function countAttunedItems(app, html, data) {
 
 // handle traits list display
 export async function toggleTraitsList(app, html, data) {
-  html.find('.traits:not(.always-visible):not(.expanded) .form-group.inactive').remove();
+  const selector = html.find('.traits:not(.always-visible):not(.expanded) .form-group.inactive');
+  selector.remove();
 }
 
 // Check Death Save Status

@@ -36,6 +36,12 @@ export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
       data.data.abilities[id].abbr = game.i18n.localize(`DND5E.Ability${Id}Abbr`);
     });
 
+    if (isObjectEmpty(data.senses)) {
+      data.hasSenses = false;
+    } else {
+      data.hasSenses = true;
+    }
+
     // Store the Sheet.appId in data.appId
     data.appId = this.appId;
 
@@ -143,6 +149,11 @@ export class Ocd5eCharacterSheet extends ActorSheet5eCharacter {
       const value = Number(target.dataset.elvl);
       const data = actor.data.data;
       await actor.update({ 'data.attributes.exhaustion': value });
+    });
+
+    // allow collapsing the inventory list sections
+    $("li[data-toggle='toggle-header']").click((event) => {
+      $(event.currentTarget).next("ul.item-list[data-toggle='collapse']").toggle();
     });
 
     // changing item qty and charges values (removing if both value and max are 0)

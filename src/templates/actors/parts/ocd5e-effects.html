@@ -2,7 +2,8 @@
 
   <ul class="items-list effects-list {{#if actor.flags.ocd-5e.allow-edit}}unlocked{{/if}}">
     {{#each effects as |section sid|}}
-    <li class="items-header effects-header" data-effect-type="{{section.type}}">
+    <li class="items-header effects-header" data-effect-type="{{section.type}}" data-toggle="toggle-header">
+      <i class='fas fa-bars hamburger-hide'></i>
       <h3 class="item-name effect-name">{{localize section.label}}</h3>
       <div class="items-header-labels">
         <div class="items-header-source" title="{{effect.sourceName}}"><span>{{localize 'DND5E.Source'}}</span></div>
@@ -10,7 +11,7 @@
       </div>
     </li>
 
-    <ul class="item-list">
+    <ul class="item-list" data-toggle="collapse">
       {{#each section.effects as |effect|}}
       <li class="item effect {{#if ../../owner}}context-enabled{{/if}}" data-effect-id="{{effect.id}}">
         <div class="item-name effect-name">

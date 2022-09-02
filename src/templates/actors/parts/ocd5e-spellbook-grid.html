@@ -4,8 +4,9 @@
 <div class="grid-layout">
   <ul class="inventory-list spellbook-list items-list">
     {{#each spellbook as |section|}}
-    <li class="items-header spellbook-header">
+    <li class="items-header spellbook-header" data-toggle="toggle-header">
       <div class="spell-level-slots">
+        <i class='fas fa-bars hamburger-hide'></i>
         <h3>{{section.label}}</h3>
 
         {{#if section.usesSlots}}
@@ -27,7 +28,7 @@
       </div>
     </li>
 
-    <ul class="item-list">
+    <ul class="item-list" data-toggle="collapse">
       {{#each section.spells as |item i|}}
       <li class="item {{#if ../../owner}}context-enabled{{/if}} {{~#if section.canPrepare}} preparable{{/if}} {{~#if data.preparation.prepared}} prepared{{/if}}{{#if (eq data.preparation.mode 'always')}} alwaysPrepared{{/if}}" data-item-id="{{item._id}}">
         {{~#if item.flags.favtab}}
