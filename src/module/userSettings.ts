@@ -99,6 +99,9 @@ export class Ocd5eUserSettings extends FormApplication {
       'traitsMovedBelowResourceNpc',
       'traitsAlwaysShowSpecialButton',
       'traitsTogglePc',
+
+      // custom stuff here
+      'unlockSheetsForGMOnly',
     ];
 
     const data = {};

@@ -4,6 +4,7 @@
 		<a class='item' data-tab='npc-sheet'>{{localize 'OCD5E.Settings.TabNPCsVehicles.tabLabel'}}</a>
 		<a class='item gm-only' data-tab='gm-options'>{{localize 'OCD5E.Settings.TabGM.tabLabel'}}</a>
 		<a class='item gm-only' data-tab='modules'>{{localize 'OCD5E.Settings.TabModules.tabLabel'}}</a>
+    <a class='item gm-only' data-tab='ocd-overrides'>{{localize 'OCD5E.Settings.TabOcdOverrides.tabLabel'}}</a>
 		<a class='item' data-tab='info'>{{localize 'OCD5E.Settings.TabInfo.tabLabel'}}</a>
 	</nav>
 
@@ -454,6 +455,19 @@
       <div class="description">
         <label for="activeEffectsMarker">{{localize 'OCD5E.Settings.ActiveEffectsMarker.name'}}</label>
         <p class="notes">{{localize 'OCD5E.Settings.ActiveEffectsMarker.hint'}}</p>
+      </div>
+    </article>
+  </section>
+
+  {{!-- OCD Overrides --}}
+  <section class='tab gm-only' data-tab='ocd-overrides'>
+    <h2>{{localize 'OCD5E.Settings.TabOcdOverrides.header'}}</h2>
+
+    <article class="setting">
+      <input type="checkbox" data-dtype='boolean' name='unlockSheetsForGMOnly' id='unlockSheetsForGMOnly' {{checked settings.unlockSheetsForGMOnly.value}}>
+      <div class="description">
+        <label for="unlockSheetsForGMOnly">{{localize 'OCD5E.Settings.UnlockSheetsForGMOnly.name'}}</label>
+        <p class="notes">{{localize 'OCD5E.Settings.UnlockSheetsForGMOnly.hint'}}</p>
       </div>
     </article>
   </section>

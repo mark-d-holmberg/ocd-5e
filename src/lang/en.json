@@ -1,4 +1,9 @@
 {
+  "OCD5E.Settings.TabOcdOverrides.tabLabel": "OCD Settings",
+  "OCD5E.Settings.TabOcdOverrides.header": "OCD Settings Header",
+  "OCD5E.Settings.UnlockSheetsForGMOnly.name": "Unlock Sheets only for GM",
+  "OCD5E.Settings.UnlockSheetsForGMOnly.hint": "Only GM's can lock sheets",
+
   "OCD5E.PlayerName": "Player Name",
   "OCD5E.Gender": "Gender",
   "OCD5E.Age": "Age",

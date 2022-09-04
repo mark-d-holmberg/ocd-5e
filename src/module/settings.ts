@@ -6,6 +6,16 @@ export function settingsList() {
   // General Settings
   const MODULE_ID = 'ocd-5e';
 
+  // Custom settings
+  game.settings.register(`${MODULE_ID}`, 'unlockSheetsForGMOnly', {
+    name: `${game.i18n.localize('OCD5E.Settings.unlockSheetsForGMOnly.name')}`,
+    hint: game.i18n.localize('OCD5E.Settings.unlockSheetsForGMOnly.hint'),
+    scope: 'world',
+    config: false,
+    type: Boolean,
+    default: false,
+  });
+
   // Color Theme
   game.settings.register(`${MODULE_ID}`, 'colorScheme', {
     name: `${game.i18n.localize('OCD5E.Settings.SheetTheme.name')}`,

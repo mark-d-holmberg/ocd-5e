@@ -332,4 +332,9 @@ export async function setSheetClasses(app, html, data) {
     html.find('.item').addClass('quantityAlwaysShownEnabled');
   }
   $('.info-card-hint .key').html(game.settings.get('ocd-5e', 'itemCardsFixKey'));
+
+  // Hide the lock button if you're not a GM
+  if (game.settings.get('ocd-5e', 'unlockSheetsForGMOnly') && !game.user.isGM) {
+    html.find('.toggle-allow-edit').remove();
+  }
 }
